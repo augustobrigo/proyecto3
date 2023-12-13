@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto3';
+  titulo = 'Proyecto3';
+  Ciclo:string="DAW";
+  nombreUsuario:string="";
+  cambiarNombre(){
+    this.Ciclo="Desarrollo de Aplicaciones Web"
+  }
+  RetornarNombre(){
+    this.Ciclo="DAW";
+  }
+ cargarNombreUsuario(nombre:string){
+  this.nombreUsuario=nombre.toUpperCase();
+ }
 }
